@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: rgb(41, 41, 41);
+  color: white;
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+}
+
+.board .btn-reset button {
+  background-color: rgb(89, 141, 255);
+  border: none;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding: 8px 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+.board .btn-reset button:hover {
+  transform: scale(1.2);
+  background-color: rgb(111, 157, 255);
+  color: rgb(220, 218, 218);
+}
+
+.board .game {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 100%;
+  height: 450px;
+}
+
+.board .game .square {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 130px;
+  font-size: 4rem;
+  border-radius: 4px;
+  outline: 1px solid red;
+}
+
+.board .turn {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.board .turn .square.isSelected {
+  background-color: rgba(76, 0, 255, 0.282);
+}
+
+.board .turn .square {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 130px;
+  font-size: 4rem;
+  border-radius: 6px;
+}
